@@ -1,16 +1,3 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
 ## Features
 
 Ready to go inheritable http client abstract to extend with your http client that implements JWT Token refreshing and retry policies out of the box.
@@ -20,6 +7,16 @@ Ready to go Authorization http Client for login/logout/refresh and getting the l
 Get saved user and tokens from last login on app start, making login persistent across app-reloads.
 
 ## Getting started
+
+first you have to create a directory assets (if it doesn't exist already) in the project root folder and create a json file called `settings.json`
+
+In said file you can specifiy the base server Url you want your Authorization Client and self implemented sub-classes of `ABackend` to use.
+
+```json
+{
+  "url": "https://myownserver.dev/api/v1/"
+}
+```
 
 > [!WARNING]  
 > If you are using Hive, ensure you leave the HivetypeId 1 for the package!
@@ -106,6 +103,4 @@ class Backend extends ABackend {
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+This Package is only really useful for any platform microservices provided by blvckleg.dev or your own Instances of them.
