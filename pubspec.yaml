@@ -1,4 +1,4 @@
-name: dart_core
+name: blvckleg_dart_core
 description: 'Implementation of base client with token injection, refresh interceptor and REST for platform microservices provided by blvckleg.dev and subdomains.'
 version: 0.0.1
 homepage: 'https://blvckleg.dev'
