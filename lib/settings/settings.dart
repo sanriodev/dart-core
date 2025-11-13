@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:blvckleg_dart_core/models/settings/settings_model.dart';
 import 'package:crypto/crypto.dart';
-import 'package:dart_core/models/settings/settings_model.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 

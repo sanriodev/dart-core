@@ -1,4 +1,4 @@
-import 'package:dart_core/models/auth/login_response_user.dart';
+import 'package:blvckleg_dart_core/models/auth/login_response_user.dart';
 import 'package:hive/hive.dart';
 
 @HiveType(typeId: 1)

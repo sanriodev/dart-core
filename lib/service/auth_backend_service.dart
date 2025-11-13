@@ -2,10 +2,10 @@
 
 import 'dart:convert';
 
-import 'package:dart_core/abstract/backend_abstract.dart';
-import 'package:dart_core/models/auth/login_response_model.dart';
-import 'package:dart_core/models/user/user_model.dart';
-import 'package:dart_core/util/util.dart';
+import 'package:blvckleg_dart_core/abstract/backend_abstract.dart';
+import 'package:blvckleg_dart_core/models/auth/login_response_model.dart';
+import 'package:blvckleg_dart_core/models/user/user_model.dart';
+import 'package:blvckleg_dart_core/util/util.dart';
 import 'package:hive/hive.dart';
 
 class AuthBackend extends ABackend {

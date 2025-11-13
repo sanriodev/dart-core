@@ -1,5 +1,5 @@
-import 'package:dart_core/models/auth/login_response_model.dart';
-import 'package:dart_core/models/auth/login_response_user.dart';
+import 'package:blvckleg_dart_core/models/auth/login_response_model.dart';
+import 'package:blvckleg_dart_core/models/auth/login_response_user.dart';
 import 'package:hive/hive.dart';
 
 class LoginAuthAdapter extends TypeAdapter<LoginResponse> {

@@ -1,5 +1,5 @@
-import 'package:dart_core/exception/session_expired.dart';
-import 'package:dart_core/service/auth_backend_service.dart';
+import 'package:blvckleg_dart_core/exception/session_expired.dart';
+import 'package:blvckleg_dart_core/service/auth_backend_service.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart';
 import 'package:http_interceptor/models/interceptor_contract.dart';

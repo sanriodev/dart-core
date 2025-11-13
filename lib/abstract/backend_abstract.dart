@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:dart_core/interceptor/auth_interceptor.dart';
-import 'package:dart_core/models/settings/settings_model.dart';
-import 'package:dart_core/settings/settings.dart';
+import 'package:blvckleg_dart_core/interceptor/auth_interceptor.dart';
+import 'package:blvckleg_dart_core/models/settings/settings_model.dart';
+import 'package:blvckleg_dart_core/settings/settings.dart';
 import 'package:flutter/widgets.dart';
 import 'package:http_interceptor/http_interceptor.dart';
 

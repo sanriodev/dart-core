@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:dart_core/adapter/login_auth_adapter.dart';
-import 'package:dart_core/models/auth/login_response_model.dart';
-import 'package:dart_core/settings/settings.dart';
+import 'package:blvckleg_dart_core/adapter/login_auth_adapter.dart';
+import 'package:blvckleg_dart_core/models/auth/login_response_model.dart';
+import 'package:blvckleg_dart_core/settings/settings.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 
