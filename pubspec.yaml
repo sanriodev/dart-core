@@ -1,6 +1,6 @@
 name: blvckleg_dart_core
 description: 'Implementation of base client with token injection, refresh interceptor and REST for platform microservices provided by blvckleg.dev and subdomains.'
-version: 0.0.1
+version: 0.0.2
 homepage: 'https://blvckleg.dev'
 
 environment:
@@ -10,11 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  crypto: ^3.0.7
+  crypto: ^3.0.6
   path_provider: ^2.1.5
   hive: ^2.2.3
-  fluttertoast: ^9.0.0
-  http: ^1.6.0
+  fluttertoast: ^8.2.8
+  http: ^1.3.0
   http_interceptor: ^2.0.0
 
 dev_dependencies:
