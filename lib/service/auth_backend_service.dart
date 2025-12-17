@@ -35,7 +35,7 @@ class AuthBackend extends ABackend {
   Future<LoginResponse> postLogin(String username, String password) async {
     final res = await post(
       jsonEncode(<String, String>{'username': username, 'password': password}),
-      'auth/login/',
+      'v1/auth/login/',
     );
 
     if (res.statusCode == 200 || res.statusCode == 201) {
@@ -54,7 +54,7 @@ class AuthBackend extends ABackend {
   }
 
   Future<User> getOwnUser() async {
-    final res = await get('user/me');
+    final res = await get('v1/user/me');
 
     if (res.statusCode == 200 || res.statusCode == 201) {
       final jsonData = await json.decode(utf8.decode(res.bodyBytes))['data'];
@@ -66,7 +66,7 @@ class AuthBackend extends ABackend {
   }
 
   Future<void> postLogout() async {
-    final res = await post(null, 'auth/logout');
+    final res = await post(null, 'v1/auth/logout');
 
     if (res.statusCode == 200 || res.statusCode == 201) {
       loggedInUser = null;
@@ -76,9 +76,22 @@ class AuthBackend extends ABackend {
     }
   }
 
+  Future<void> patchChangePassword(String id, String password) async {
+    final res = await patch(
+      jsonEncode(<String, String>{'password': password, 'id': id}),
+      'v2/user/$id',
+    );
+
+    if (res.statusCode == 200 || res.statusCode == 201) {
+      return;
+    } else {
+      throw res;
+    }
+  }
+
   Future<LoginResponse?> postRefresh() async {
     final box = Hive.box<LoginResponse>('auth');
-    const String url = 'auth/refresh';
+    const String url = 'v1/auth/refresh';
     if (_loggedInUser?.accessToken != null) {
       final Map<String, dynamic> loginData = {
         'refresh_token': _loggedInUser?.refreshToken,
